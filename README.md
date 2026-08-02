@@ -50,4 +50,6 @@ streamlit run app.py
 
 ## Screenshot
 
-![Dashboard](images/Sistem Prediksi Kurs (2).png)
+<p align="center">
+  <img src="images/Sistem Prediksi Kurs (2).png" width="800">
+</p>
