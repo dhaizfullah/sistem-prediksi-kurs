@@ -1,42 +1,53 @@
 # Sistem Prediksi Kurs Mata Uang
 
-Aplikasi web prediksi kurs menggunakan Prophet + Streamlit.
+Dashboard berbasis web untuk memantau nilai tukar mata uang secara real-time dan melakukan prediksi kurs terhadap Rupiah menggunakan Meta Prophet dan Streamlit.
+
+## Fitur
+
+- Monitoring kurs real-time menggunakan ExchangeRate API
+- Visualisasi data historis
+- Prediksi kurs 7 hari ke depan menggunakan Meta Prophet
+- Konversi mata uang
+- Mendukung mata uang USD, EUR, JPY, SGD, CNY, MYR, AUD, dan SAR
+
+## Teknologi
+
+- Python
+- Streamlit
+- Meta Prophet
+- Pandas
+- Plotly
+- ExchangeRate API
 
 ## Struktur Folder
 
 ```
-kurs_app/
+sistem-prediksi-kurs/
+├── actual_data/
+├── models/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── models/
-    ├── prophet_USD.pkl
-    ├── prophet_SGD.pkl
-    ├── prophet_MYR.pkl
-    ├── prophet_JPY.pkl
-    ├── prophet_CNY.pkl
-    ├── prophet_EUR.pkl
-    ├── prophet_AUD.pkl
-    └── prophet_SAR.pkl
+└── .gitignore
 ```
 
-## Cara Pakai
+## Instalasi
 
-### 1. Siapkan model
-Download semua file `.pkl` dari Google Drive (`Skripsi/Models/`) ke folder `models/`.
-
-### 2. Install dependency
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Jalankan
+## Menjalankan Aplikasi
+
 ```bash
 streamlit run app.py
 ```
 
-## Fitur
-- Pilih mata uang (USD, SGD, MYR, JPY, CNY, EUR, AUD, SAR)
-- Tabel MAPE semua mata uang
-- Kurs realtime dari ExchangeRate API
-- Prediksi 7 hari ke depan (tabel + grafik)
+## Dataset
+
+- Data historis kurs dari Bank Indonesia
+- Data kurs real-time dari ExchangeRate API
+
+## Screenshot
+
+
