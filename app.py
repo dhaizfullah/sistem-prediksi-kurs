@@ -421,7 +421,15 @@ else:
                 template="plotly_dark",
                 height=450,
                 hovermode="x unified",
-                margin=dict(l=10, r=10, t=40, b=10)
+                margin=dict(l=10, r=10, t=50, b=10),
+
+                legend=dict(
+                    orientation="h",
+                    yanchor="top",
+                    y=-0.2,
+                    xanchor="center",
+                    x=0.5
+                )
             )
             st.plotly_chart(fig_val, use_container_width=True)
             
