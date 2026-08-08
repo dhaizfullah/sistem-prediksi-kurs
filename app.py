@@ -375,7 +375,7 @@ else:
 
         legend=dict(
             orientation="h",
-            anchor="top",
+            yanchor="top",
             y=-0.2,
             xanchor="center",
             x=0.5
